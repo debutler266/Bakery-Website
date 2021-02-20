@@ -6,6 +6,10 @@ p {
   margin: 0;
 }
 
+section {
+  padding: 60px 0;
+}
+
 header {
   width: 100%;
   height: 100vh; /* No WHITE SPACE !!!! at bottom */
@@ -104,7 +108,7 @@ opacity: 0.8;
 .btn {
   width: 218px;
   padding: 5px 0 !important;
-  border: 1px solid #c69963;
+  border: 3px solid #c69963!important;
   position: relative;
   overflow: hidden;
 }
@@ -122,4 +126,117 @@ opacity: 0.8;
 
 .btn:hover::before {
   left: 100%;
+}
+
+/* About section */
+
+.section-heading h4 {
+  text-transform: uppercase;
+  color: #101D2C;
+  line-height: 0;
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.section-heading h1 {
+  font-family: 'Merriweather', sans-serif;
+  color: #c69963;
+}
+
+.about .btn {
+  width: 150px;
+  color: #c69963 !important;
+  transition: background-color 650ms;
+}
+
+.about .btn:hover {
+  color: #ffffff!important;
+  background-color: #c69963;
+}
+
+
+
+@media (min-width: 576px) {
+  .navbar-brand {
+    max-width: 150px;
+  }
+
+  .hamburger-menu {
+    top: 35px;
+    right: 25px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .btn {
+    width: 150px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  header > .container {
+    padding: 0 15px;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+
+  .navbar-brand {
+    position: initial;
+    transform: initial;
+  }
+
+  .nav-list {
+    position: initial;
+    width: initial;
+    height: initial;
+    background-color: initial;
+    flex-direction: row;
+    opacity: initial;
+    transform: initial;
+    transition: initial;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-item {
+    margin: 0 30px;
+  }
+
+  .nav-item:last-child {
+    margin-right: 0;
+  }
+
+  .nav-link {
+    position: relative;
+    padding: 0;
+  }
+
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    background-color: #c69963;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 650ms;
+  }
+
+  .nav-link:hover::before {
+    transform: scaleX(1);
+  }
+
+  .btn {
+    width: 218px;
+    padding: 5px 0 !important;
+    border: 1px solid #c69963;
+    position: relative;
+    overflow: hidden;
+  }
 }
