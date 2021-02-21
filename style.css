@@ -221,7 +221,23 @@ hr {
 }
 
 /* Chefs */
+.card-body h1 {
+  font-size: 26px;
+  letter-spacing: 1px;
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 400;
+  text-decoration: underline;
+}
 
+.card-body h6 {
+  font-size: 16px;
+  color: #c69963;
+}
+
+footer {
+  background-color: #101D2C;
+  color: rgba(255, 255, 255, 0.5);
+}
 
 /* Responsive Section */
 @media (min-width: 576px) {
