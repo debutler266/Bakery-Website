@@ -92,6 +92,11 @@ opacity: 0.8;
   transform: scale(1);
 }
 
+.nav-list .nav-item .nav-link:hover {
+  background-color: #c69963;
+  color: #ffffff;
+}
+
 .hero-text {
   position: absolute;
   top: 45%;
