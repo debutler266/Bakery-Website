@@ -248,6 +248,7 @@ footer {
 @media (min-width: 300px) {
   .btn {
       margin-left: 14px!important;
+      margin-top: 10px!important;
     }
 }
 
@@ -273,10 +274,9 @@ footer {
 
 
 @media (min-width: 768px) {
-  .btn {
-    width: 150px;
+.btn {
+    width: 215px!important;
   }
-
 }
 
 @media (min-width: 992px) {
