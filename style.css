@@ -371,4 +371,9 @@ footer {
     background-color: #c69963;
     width: 100px;
   }
+
+  .d-xl-block {
+    margin-left: -1rem!important;
+  }
+
 }
